@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/CSS" href="Gerenciador.css">
+    <script src="Gerenciador.js"></script>
+    <title>Gerenciador</title>
+</head>
+
+<body id="body2">
+
+    <h1 id="h1principal">Gerenciador de Tarefas</h1>
+    <center>
+        <button id="pendentes" onclick="exibirPendentes()">Pendentes</button>
+        <button id="concluidas" onclick="exibirConcluidas()">Concluídas</button>
+        <input type="text" id="inputTarefa" placeholder="Nome da tarefa" onkeydown="criarTarefa(event)">
+        <select id="prioridade">
+            <option value="alta">Alta</option>
+            <option value="media">Média</option>
+            <option value="baixa">Baixa</option>
+        </select>
+        <label id="limite"  for="tempo">Tempo Limite:</label>
+        <input type="number" id="tempo" placeholder="Tempo" min="0">
+        <select id="unidade">
+            <option value="segundos">Segundos</option>
+            <option value="minutos">Minutos</option>
+            <option value="horas">Horas</option>
+            <option value="dias">Dias</option>
+        </select>
+       
+        <div id="painel"></div>
+
+    </center>
+</body>
+
+</html>
