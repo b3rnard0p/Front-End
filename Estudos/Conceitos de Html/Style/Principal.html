@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incrição</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box} 
+        body{
+            background-color: rgb(0, 0, 0);            
+        }
+
+        form{
+            background-color:rgb(26, 26, 26) ;
+            max-width: 500px;
+            width: 70%;
+            padding: 20px;
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%)
+        }
+
+        form{
+            text-align: center;
+            color:rgb(255, 255, 255);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        form input[type=text]{
+            width:100%;
+            height:30px;          
+            padding-left: 10px;
+            margin: 10px 0;
+        }
+
+        form input[type=email]{
+            width:100%;
+            height:30px;          
+            padding-left: 10px;
+            margin: 10px 0;
+        }
+
+        form input[type=tel]{
+            width:100%;
+            height:30px;          
+            padding-left: 10px;
+            margin: 10px 0;
+        }
+        form input[type=submit]{
+            width:100%;
+            height:40px;
+            cursor: pointer;
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            border:0;
+            border-radius:20px;
+            transition: 1s;
+        }
+
+        form input[type=submit]:hover{
+            background-color: #37393a; 
+        }            
+     </style>
+     <!--Dentro do Style eu fiz a maior parte da estética do formulário, pois sem CSS os recursos são mais limitados, mas em resumo, eu basicamente brinquei com as cores, fomratos e com a fonte do formulário-->
+     <!--fora do style adicionei 8 coisas novas que o senhor havia pedido, dentro do style adicionei umas 20 kkk-->
+</head>
+<body>
+    <div class="box">
+      <form action="">                                
+        <legend><b>Inscreva-se</b></legend> <!--Usei o legend e o 'b' para deixar em negrito e mais estético-->
+            <div>
+                <input type="text" name="nome" placeholder="Seu nome..." required> <!--Usei o placeholder para que não fosse necessário o label-->
+            </div>
+            
+            <div>
+                <input type="text" name="sobrenome" placeholder="Seu sobrenome..."required>
+            </div>
+
+            <div>
+                <input type="email" name="email" placeholder="Seu email..." required> 
+            </div>
+            
+            <div>
+                <input type="tel" name="telefone" placeholder="Seu telefone..."required> 
+            </div>
+            
+            <div>
+                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" class="inputUser" required>                   
+                    <label>Região</label>
+                    <select id="regiao"> <!--Usei o select para mudar um pouco o visual e a praticidade do formulário-->
+                        <option selected disabled value="">Selecione</option> <!--Utilizei o selected disabled para que ficasse mais estético na hora de selecionar, para que estivesse escrito'selecione' ao invés de uma das opçoes-->
+                        <option>Sul</option>
+                        <option>Sudeste</option>
+                        <option>Centro-Oeste</option>
+                        <option>Norte</option> 
+                        <option>Nordeste</option>
+                    </select>      
+            </div>
+            <br>
+            <div>
+            <label>Qual modelo você estaria interessado</label><br>
+            <label>
+                <input type="radio"d name="devweb" value="supramk4" checked>Supra mk4 <!--Usei o checked para quanto a página for iniciada o radio já vir com uma marcação automática-->
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="gtrr34">GTR r34
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="gtrr35">GTR r35
+            </label>
+            </div>
+            <br>
+            <div>
+                <lebel>Selecione seu nível como piloto: </lebel><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="iniciante"> <!--Usei o checkbox para a marcação, pois facilita para o usuário, além de ficar mais claro o q fazer-->
+                <label for="tecnologia1">Iniciante</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Intermediario">
+                <label for="tecnologia3">Intermediario</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="avancado">
+                <label for="tecnologia5">Avançado</label>
+            <div>
+            <br>
+            <label>Conte um pouco sobre suas corridas:</label><br>
+            <textarea row="6" style="width: 26em" id="experiencia" name="experiencia"d></textarea><!--Usei o textarea para a pessoa poder escrever mais livremente, sem restições de linha -->
+            </div>
+            <br>
+            <input type="submit" name="acao" value="Enviar"/> <!--Usei o submit ao ivés do botton, para poder configurar la no style-->
+    </form> 
+</body>
+</html>

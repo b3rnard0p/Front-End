@@ -1,0 +1,452 @@
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+.div1 {
+    background-color: rgb(255, 255, 255);
+    max-width: 2000px;
+    width: 100%;
+    padding: 22px;
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.div1 input[type="text"] {
+    width: 9%;
+    height: 38px;
+    padding-left: 10px;
+    position: absolute;
+    top: 20px;
+    left: 1625px;
+    border-style: inherit;
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+    transition: 0s;
+}
+
+.div1 [type="text"]:hover {
+    background-color: #d4d4d4;
+}
+
+.div2 {
+    background-color: rgb(168, 168, 168);
+    width: 100%;
+    padding: 22px;
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#botao1[type=submit] {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 1580px;
+    top: 7px;
+    cursor: pointer;
+    background-color: rgb(247, 247, 247);
+    color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 20px;
+}
+
+#botao2[type=submit] {
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    left: 1640px;
+    top: 11px;
+    cursor: pointer;
+    background-color: rgb(247, 247, 247);
+    color: rgb(0, 0, 0);
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#botao3[type=submit] {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 1750px;
+    top: 4px;
+    cursor: pointer;
+    background-color: rgb(247, 247, 247);
+    color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 20px;
+}
+
+#botao5 {
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    left: 1640px;
+    top: 11px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#botao6 {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 1750px;
+    top: 4px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 20px;
+}
+
+#botao7 {
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    left: 1580px;
+    top: 7px;
+    cursor: pointer;
+    background-color: #eee;
+    color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 20px;
+}
+
+#botao8 {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 1750px;
+    top: 4px;
+    cursor: pointer;
+    background-color: #eee;
+    color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 20px;
+}
+
+#botao9 {
+    width: 10px;
+    height: 30px;
+    position: absolute;
+    left: 1520px;
+    top: 7px;
+    cursor: pointer;
+    background-color:  rgb(247, 247, 247);
+    color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 20px;
+}
+
+#botao10 {
+    width: 500px;
+    height: 30px;
+    position: absolute;
+    left: 1600px;
+    top: 7px;
+    cursor: pointer;
+    background-color:  rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 20px;
+}
+
+#botao11 {
+        width: 100px;
+        height: 30px;
+        position: absolute;
+        left: 1750px;
+        top: 4px;
+        cursor: pointer;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: 0;
+        border-radius: 20px;
+}
+
+#imagem1 {
+    width: 19px;
+    height: 18px;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    cursor: pointer;
+}
+
+#imagem2 {
+    width: 80;
+    height: 70px;
+    padding-left: 10px;
+    position: absolute;
+    top: 44px;
+    left: 15px;
+    cursor: pointer;
+}
+
+#imagem3 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 64px;
+    left: 1820px;
+    cursor: pointer;
+}
+
+#imagem4 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 1850px;
+    cursor: pointer;
+}
+
+#imagem5 {
+    width: 50px;
+    height: 17px;
+    position: absolute;
+    top: 12px;
+    left: 80px;
+    cursor: pointer;
+}
+
+#imagem6 {
+    width: 15px;
+    height: 14px;
+    position: absolute;
+    top: 73px;
+    left: 1635px;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+#imagem6:hover {
+    background-color: #b1b1b1;
+}
+
+select {
+    -webkit-appearance: none !important;
+    background-color: #ffffff;
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    border: 0px solid #ffffff;
+    padding: 0.5rem;
+    color: rgba(0, 0, 0, 0.75);
+    line-height: normal;
+    font-size: 16px;
+    border-bottom: 0px solid transparent;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 9%;
+}
+
+select:hover {
+    background-color: rgb(92, 92, 92);
+}
+
+.conteudo {
+    background-color: rgb(255, 255, 255);
+    max-width: 1900px;
+    width: 100%;
+    padding: 800px;
+    position: absolute;
+    left: 0px;
+    top: 170px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#imagem7 {
+    width: 1370px;
+    height: 500px;
+    position: absolute;
+    top: 5px;
+    left: 250px;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+#imagem8 {
+    width: 1370px;
+    height: 700px;
+    position: absolute;
+    top: 630px;
+    left: 250px;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 550px;
+    left: 250px;
+}
+
+#botao4 {
+    background-color: #000000;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffffff;
+    position: absolute;
+    top: 1350px;
+    left: 860px;
+    cursor: pointer;
+}
+
+.body2 {
+    background-image: url(junte-sefundo.jpg);
+}
+
+form {
+    background-color: rgb(26, 26, 26);
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+form {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form input[type=text] {
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+form input[type=email] {
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+form input[type=tel] {
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+form input[type=submit] {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+form input[type=submit]:hover {
+    background-color: #37393a;
+}
+#regiao{
+    color: rgb(0, 0, 0);
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+
+}
+
+.body3 {
+    background-color: #eee;
+}
+
+header {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #000000;
+    position: absolute;
+    top:10px ;
+    left: 750px;
+}
+
+.container-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly ;
+    gap: 2vw;
+    padding:0 1vw ;
+    transition: transform 1s linear;
+}
+
+.itens-galeria {
+    width: 340px;
+    height: 250px;
+    border: 10px solid #fff;
+    box-sizing: 5px 5px 5px #0006;
+    flex-grow:1 ;
+}
+.itens-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.itens-galeria img:hover {
+    transform: scale(1.3);
+    filter:none;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-style: italic;
+}
+
+#h11 {
+    position: absolute;
+    top: 22px;
+    left: 900px;
+}
+#p1 {
+    position: absolute;
+    top: 250px;
+    left: 400px;
+    color: #fff;
+}
+.body4 {
+    background-image: url(junte-sefundo.jpg); 
+   
+}

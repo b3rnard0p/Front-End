@@ -1,0 +1,113 @@
+body {
+    font-size: 100%;
+    background: black;
+    color: aliceblue;
+   
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
+
+#perfil {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 850px;
+    border-radius: 30%;
+}
+
+#nome {
+    position: absolute;
+    top: 250px;
+    left: 800px;
+    font-family:cursive
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.conteudo {
+    margin-top:  310px;
+    border-top: 0.4px solid  #FFF2E7;
+}
+#descricao{
+    position: absolute;
+    top:  400px;
+    left: 580px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#titulo-descricao {
+    position: absolute;
+    top:  320px;
+    left: 860px;
+    text-align: center;
+    font-family: cursive;
+}
+
+#titulo-infomacoes {
+    position: absolute;
+    top:  500px;
+    left: 850px;
+    text-align: center;
+    font-family: cursive;
+}
+
+#tabela {
+    position: absolute;
+    top:  570px;
+    left: 600px;
+    width: 700px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#tabela2{
+    position: absolute;
+    top:  620px;
+    left: 600px;
+    width: 700px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+th,td {
+    border: 1px solid rgb(255, 255, 255);
+    padding:8px;
+}
+
+#int {
+    width: 100px;
+}
+
+#hob {
+    width: 100px;
+}
+
+.rodape {
+    position: absolute;
+    top: 700px;
+    left: 800px;
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+#insta{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 110px;
+}
+
+
+

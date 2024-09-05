@@ -1,0 +1,43 @@
+body{
+    background-color: #a7a7a7;
+    background-image: url("wallpaper.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+    background-position: right bottom ;
+}
+
+h1 {
+    font-family: arial, verdana, sans-serif;
+    font-style: italic;
+    color: #000000;   
+    line-height: 2.0;
+}
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+}
+cs
+a {
+    color: rgb(132, 0, 255);
+}
+
+a:link {
+color: red;
+}
+
+a:visited {
+    color: rgb(90, 73, 73);
+}
+
+img {
+    width: 300px;
+    height: 250px;
+}
+ul {
+    text-align: center;
+}
