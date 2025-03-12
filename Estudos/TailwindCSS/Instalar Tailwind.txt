@@ -1,0 +1,19 @@
+1-Instalar:
+npm install tailwindcss @tailwindcss/cli
+
+2-Criar um input.css na pasta src
+
+3-Colocar no arquivo input.css:
+@import "tailwindcss";
+
+4-Iniciar o Tailwind:
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+
+5-Adicionar ao arquivo tailwind.config.js:
+module.exports = {
+  content: ["./src/&&/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugin: [],
+};
