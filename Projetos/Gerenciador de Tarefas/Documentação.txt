@@ -1,4 +1,0 @@
-Esse Projeto foi desenvolvido no primeiro semestre de 2023 como o projeto final da disciplina "Aplicações Web".
-Seu intuito é ser um simples gerenciador de tarefas, com ordem de prioridade, tempo de conclusão e diversas outras 
-funcionalidades, as tecnologias utilizadas foram HTML( Linguagem de marcação), CSS( Linguagem de estilo), 
-JavaScript(Linguagem de programação) e BootStrap(Biblioteca).
