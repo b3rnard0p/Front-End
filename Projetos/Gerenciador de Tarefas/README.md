@@ -22,13 +22,14 @@ GerenciadorDeTarefas/
 - Crie os arquivos HTML,CSS e JavaScript
 
 **2️⃣ Conecte o HTML e o CSS**
-- 
+```bash
+<link rel="stylesheet" type="text/CSS" href="Gerenciador.css">
+```
 
 **3️⃣ Conecte o HTML e o JavaScript**
-- 
-
-**4️⃣ Conecte o login a home**
-- 
+```bash
+<script src="Gerenciador.js"></script>
+```
 
 ## 📌 Funcionalidades
 
@@ -37,7 +38,7 @@ GerenciadorDeTarefas/
 
 ## 📊 Melhorias Futuras
 
-- 
+- Utilizar metódos de estilização como Bootstrap e TailwindCSS
 
 ---
 
