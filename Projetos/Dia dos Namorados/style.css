@@ -1,0 +1,1505 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  background-color: rgb(29, 29, 29);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 1574px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-size: clamp(3rem, 10vw, 7rem);
+  font-family: 'Dancing Script', cursive;
+  color: #9900ff;
+  text-align: center;
+  padding-bottom: 3rem;
+  word-break: break-word;
+}
+
+.carta {
+  position: relative;
+  width: 150vw;
+  height: auto;
+  max-width: 1574px;
+  height: auto;
+  left: calc((150vw - 150vw) / 2);
+  margin: 0;
+  padding: 0;
+}
+
+.patinha-1 {
+  position: absolute;
+  top: 0.2%;
+  left: 3%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-2 {
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-3 {
+  position: absolute;
+  top: 1%;
+  left: 90%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-4 {
+  position: absolute;
+  top: 4%;
+  left: 79%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-5 {
+  position: absolute;
+  top: 5%;
+  left: 7%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-6 {
+  position: absolute;
+  top: 8%;
+  left: 67%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-7 {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-8 {
+  position: absolute;
+  top: 12%;
+  left: 85%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-9 {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-10 {
+  position: absolute;
+  top: 17%;
+  left: 90%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-11 {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-12 {
+  position: absolute;
+  top: 22%;
+  left: 95%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-13 {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-14 {
+  position: absolute;
+  top: 28%;
+  left: 80%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-15 {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-16 {
+  position: absolute;
+  top: 32.3%;
+  left: 75%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-17 {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-18 {
+  position: absolute;
+  top: 38%;
+  left: 90%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-19 {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-20 {
+  position: absolute;
+  top: 42%;
+  left: 80%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-21 {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-22 {
+  position: absolute;
+  top: 48%;
+  left: 75%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-23 {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-24 {
+  position: absolute;
+  top: 53%;
+  left: 90%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-25 {
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-26 {
+  position: absolute;
+  top: 58%;
+  left: 80%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-27 {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-28 {
+  position: absolute;
+  top: 62%;
+  left: 75%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-29 {
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-30 {
+  position: absolute;
+  top: 68%;
+  left: 90%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-31 {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-32 {
+  position: absolute;
+  top: 72%;
+  left: 80%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-33 {
+  position: absolute;
+  top: 75%;
+  left: 25%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-34 {
+  position: absolute;
+  top: 78%;
+  left: 75%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-35 {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-36 {
+  position: absolute;
+  top: 82%;
+  left: 90%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-37 {
+  position: absolute;
+  top: 85%;
+  left: 15%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-38 {
+  position: absolute;
+  top: 88%;
+  left: 80%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-39 {
+  position: absolute;
+  top: 90%;
+  left: 25%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-40 {
+  position: absolute;
+  top: 92%;
+  left: 75%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-41 {
+  position: absolute;
+  top: 95%;
+  left: 5%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-42 {
+  position: absolute;
+  top: 98%;
+  left: 90%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-43 {
+  position: absolute;
+  top: 99%;
+  left: 15%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-44 {
+  position: absolute;
+  top: 10%;
+  left: 95%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-45 {
+  position: absolute;
+  top: 12%;
+  left: 20%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-46 {
+  position: absolute;
+  top: 15%;
+  left: 85%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-47 {
+  position: absolute;
+  top: 18%;
+  left: 10%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-48 {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-49 {
+  position: absolute;
+  top: 22%;
+  left: 2%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-50 {
+  position: absolute;
+  top: 25%;
+  left: 95%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-51 {
+  position: absolute;
+  top: 28%;
+  left: 15%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-52 {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-53 {
+  position: absolute;
+  top: 32%;
+  left: 25%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-54 {
+  position: absolute;
+  top: 35%;
+  left: 75%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-55 {
+  position: absolute;
+  top: 38%;
+  left: 5%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-56 {
+  position: absolute;
+  top: 40%;
+  left: 90%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-57 {
+  position: absolute;
+  top: 42%;
+  left: 15%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-58 {
+  position: absolute;
+  top: 45%;
+  left: 80%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-59 {
+  position: absolute;
+  top: 48%;
+  left: 25%;
+  width: 2%;
+  height: auto;
+}
+
+.patinha-60 {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  width: 2%;
+  height: auto;
+}
+
+.heart-container {
+  position: relative;
+  width: 150vw;
+  height: auto;
+  max-width: 500px;
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .heart-container {
+    width: 90vw;
+  }
+}
+
+
+
+.heart-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.heart-overlay {
+  position: absolute;
+  top: 27%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.heart-container:hover .heart-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.heart-container.active .heart-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.heart-overlay span {
+  text-align: center;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 4vw;
+}
+
+@media (min-width: 480px) {
+  .heart-overlay span {
+    font-size: 22px;
+  }
+}
+
+main {
+  width: 100%;
+  padding: 0 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.momento {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.momento.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.momento-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-1 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-1 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 31, 179, 0.5);
+}
+
+.foto-1:nth-child(1) {
+  top: 23%;
+  left: 18%;
+  width: 50%;
+  height: 68%;
+}
+
+.foto-1:nth-child(2) {
+  top: 55%;
+  left: 46%;
+  width: 35%;
+  height: 50%;
+}
+
+.momento-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-2 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-2 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 31, 179, 0.5);
+}
+
+.foto-2:nth-child(1) {
+  top: 35%;
+  left: 17%;
+  width: 50%;
+  height: 68%;
+}
+
+.foto-2:nth-child(2) {
+  top: 15%;
+  left: 43%;
+  width: 35%;
+  height: 50%;
+}
+
+.momento-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-3 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-3 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 31, 179, 0.5);
+}
+
+.foto-3:nth-child(1) {
+  top: 13%;
+  left: 9%;
+  width: 40%;
+  height: 45%;
+}
+
+.foto-3:nth-child(2) {
+  top: 60%;
+  left: 9%;
+  width: 40%;
+  height: 45%;
+}
+
+.foto-3:nth-child(3) {
+  top: 13%;
+  left: 50%;
+  width: 40%;
+  height: 45%;
+}
+
+.foto-3:nth-child(4) {
+  top: 60%;
+  left: 50%;
+  width: 40%;
+  height: 45%;
+}
+
+.momento-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-4 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-4 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-4:nth-child(1) {
+  top: 5%;
+  left: 6%;
+  width: 45%;
+  height: 50%;
+}
+
+.foto-4:nth-child(2) {
+  top: 55%;
+  left: 49%;
+  width: 45%;
+  height: 50%;
+}
+
+.foto-4:nth-child(3) {
+  top: 35%;
+  left: 38%;
+  width: 30%;
+  height: 35%;
+}
+
+.momento-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-5 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-5 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-5:nth-child(1) {
+  top: 23%;
+  left: 4%;
+  width: 45%;
+  height: 68%;
+}
+
+.foto-5:nth-child(2) {
+  top: 23%;
+  left: 51%;
+  width: 45%;
+  height: 68%;
+}
+
+.foto-5:nth-child(3) {
+  top: 58%;
+  left: 33%;
+  width: 35%;
+  height: 50%;
+}
+
+.momento-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-6 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-6 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-6:nth-child(1) {
+  top: 36%;
+  left: 18%;
+  width: 50%;
+  height: 68%;
+}
+
+.foto-6:nth-child(2) {
+  top: 20%;
+  left: 42%;
+  width: 35%;
+  height: 50%;
+}
+
+.momento-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-7 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-7 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-7:nth-child(1) {
+  top: 30%;
+  left: 21%;
+  width: 60%;
+  height: 80%;
+}
+
+.momento-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 30px;
+  box-sizing: border-box;
+}
+
+.fotos-8 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-8 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-8:nth-child(1) {
+  top: 30%;
+  left: -5%;
+  width: 55%;
+  height: 78%;
+}
+
+.foto-8:nth-child(2) {
+  top: 30%;
+  left: 52%;
+  width: 55%;
+  height: 78%;
+}
+
+.momento-9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-9 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-9 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 31, 179, 0.5);
+}
+
+.foto-9:nth-child(1) {
+  top: 10%;
+  left: 8%;
+  width: 40%;
+  height: 45%;
+}
+
+.foto-9:nth-child(2) {
+  top: 60%;
+  left: 29%;
+  width: 40%;
+  height: 45%;
+}
+
+.foto-9:nth-child(3) {
+  top: 10%;
+  left: 52%;
+  width: 40%;
+  height: 45%;
+}
+
+.momento-10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-10 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-10 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-10:nth-child(1) {
+  top: 23%;
+  left: 7%;
+  width: 40%;
+  height: 80%;
+}
+
+.foto-10:nth-child(2) {
+  top: 23%;
+  left: 50%;
+  width: 40%;
+  height: 80%;
+}
+
+.momento-11 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-11 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-11 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-11:nth-child(1) {
+  top: 18%;
+  left: 10%;
+  width: 60%;
+  height: 75%;
+}
+
+.foto-11:nth-child(2) {
+  top: 50%;
+  left: 49%;
+  width: 40%;
+  height: 60%;
+}
+
+.momento-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 60px;
+  box-sizing: border-box;
+}
+
+.fotos-12 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-12 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-12:nth-child(1) {
+  top: -22%;
+  left: -11%;
+  width: 120%;
+  height: 140%;
+}
+
+.foto-12:nth-child(2) {
+  top: 65%;
+  left: 20%;
+  width: 55%;
+  height: 60%;
+}
+
+.momento-13 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-13 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-13 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-13:nth-child(1) {
+  top: 28%;
+  left: 5%;
+  width: 70%;
+  height: 80%;
+}
+
+.foto-13:nth-child(2) {
+  top: 10%;
+  left: 57%;
+  width: 35%;
+  height: 50%;
+}
+
+.momento-14 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-14 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-14 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-14:nth-child(1) {
+  top: 25%;
+  left: 21%;
+  width: 60%;
+  height: 80%;
+}
+
+.momento-15 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-15 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-15 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-15:nth-child(1) {
+  top: 37%;
+  left: 15%;
+  width: 50%;
+  height: 68%;
+}
+
+.foto-15:nth-child(2) {
+  top: 15%;
+  left: 42%;
+  width: 35%;
+  height: 50%;
+}
+
+.momento-16 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-16 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-16 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-16:nth-child(1) {
+  top: 23%;
+  left: 8%;
+  width: 40%;
+  height: 80%;
+}
+
+.foto-16:nth-child(2) {
+  top: 23%;
+  left: 51%;
+  width: 40%;
+  height: 80%;
+}
+
+.momento-17 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-17 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-17 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-17:nth-child(1) {
+  top: 25%;
+  left: 35%;
+  width: 40%;
+  height: 80%;
+}
+
+.foto-17:nth-child(2) {
+  top: 18%;
+  left: 20%;
+  width: 30%;
+  height: 60%;
+}
+
+.momento-18 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-18 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-18 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-18:nth-child(1) {
+  top: 23%;
+  left: 7%;
+  width: 40%;
+  height: 80%;
+}
+
+.foto-18:nth-child(2) {
+  top: 23%;
+  left: 50%;
+  width: 40%;
+  height: 80%;
+}
+
+.momento-19 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-19 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-19 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-19:nth-child(1) {
+  top: 23%;
+  left: 25%;
+  width: 40%;
+  height: 80%;
+}
+
+.foto-19:nth-child(2) {
+  top: 35%;
+  left: 53%;
+  width: 30%;
+  height: 60%;
+}
+
+.momento-20 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-20 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-20 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-20:nth-child(1) {
+  top: 8%;
+  left: 29%;
+  width: 40%;
+  height: 100%;
+}
+
+.momento-21 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-21 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-21 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-21:nth-child(1) {
+  top: 26%;
+  left: 9%;
+  width: 40%;
+  height: 80%;
+}
+
+.foto-21:nth-child(2) {
+  top: 26%;
+  left: 50%;
+  width: 40%;
+  height: 80%;
+}
+
+.momento-22 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-22 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+}
+
+.foto-22 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-22:nth-child(1) {
+  top: 25%;
+  left: 9%;
+  width: 40%;
+  height: 80%;
+}
+
+.foto-22:nth-child(2) {
+  top: 25%;
+  left: 50%;
+  width: 40%;
+  height: 80%;
+}
+
+.momento-23 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+}
+
+.fotos-23 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1574 / 860;
+
+}
+
+.foto-23 {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0.2rem 1rem rgba(124, 41, 179, 0.5);
+}
+
+.foto-23:nth-child(1) {
+  top: 23%;
+  left: 9%;
+  width: 40%;
+  height: 80%;
+}
+
+.foto-23:nth-child(2) {
+  top: 23%;
+  left: 50%;
+  width: 40%;
+  height: 80%;
+}
+
+.descricao {
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.descricao h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #ffe3e3;
+}
+
+.descricao p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #ffe3e3;
+}
