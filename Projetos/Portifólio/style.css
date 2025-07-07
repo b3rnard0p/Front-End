@@ -1,0 +1,617 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* <header> */
+/* <nav> */
+.navbar {
+  display: flex;
+  /* Alinhar horizontalmente os itens. */
+  justify-content: space-between;
+  /* Coloca o primeiro à esquerda e o último à direita(Mobile). */
+  padding: 1.2rem 2.5rem;
+  /* Espaçamento interno. */
+  position: sticky;
+  /* Faz a navbar “grudar” no topo quando a página rola. */
+  z-index: 100;
+  /* Navbar fica acima dos outros. */
+  background: #1a1a1a;
+  /* Cor de fundo. */
+}
+
+/* <ul> */
+.nav-links {
+  flex: 1;
+  /* Faz a lista de links ocupar todo o espaço disponível restante. */
+  display: flex;
+  /* Alinhar horizontalmente os <li>. */
+  justify-content: center;
+  /* Centraliza os <li> dentro de nav-links. */
+  gap: 3.5rem;
+  /* Espaço entre cada link. */
+  list-style: none;
+  /* Remove as bolinhas da lista. */
+  margin: 0;
+  /* Zera a margem do <ul>. */
+  padding: 0;
+  /* Zera o preenchimento do <ul>. */
+}
+
+/* <li> */
+.nav-links li a {
+  text-decoration: none;
+  /* Remove o sublinhado dos links. */
+  font-weight: 600;
+  /* seminegrito. */
+  position: relative;
+  /* Pra poder posicionar as barrinhas. */
+  padding: 0.6rem 0;
+  /* Espaço p barrinhas não grudarem no link */
+  font-size: 1.1rem;
+  /* Tamanho da fonte. */
+}
+
+/* barrinha */
+.nav-links li a::after {
+  content: '';
+  /* Cria as barrinhas após cada <a>. */
+  position: absolute;
+  /* Posiciona dentro do <a> (relative). */
+  width: 0;
+  /* Inicialmente, a “linha” tem largura zero. */
+  height: 3px;
+  /* Espessura da linha. */
+  bottom: 0;
+  /* Parte inferior do link. */
+  left: 0;
+  /* Inicia na borda esquerda. */
+  transition: all 0.3s ease;
+  /* Tempo do aumento de largura. */
+  border-radius: 3px;
+  /* Pontas da linha arredondadas. */
+}
+
+/* limite de tamanho da barrinha */
+.nav-links li a:hover::after {
+  width: 100%;
+  /* A linha cresce até a largura total do link. */
+}
+
+/* botão de tema */
+.btn-theme {
+  background: none;
+  /* Remove cor de fundo. */
+  border: none;
+  /* Remove borda. */
+  font-size: 1.4rem;
+  /* Tamanho. */
+  cursor: pointer;
+  /* “mãozinha” ao passar o mouse. */
+}
+
+/* hamburguer */
+.hamburger {
+  display: none;
+  /* Esconde o botão hamburger. */
+  background: none;
+  /* Sem fundo. */
+  border: none;
+  /* Sem borda. */
+  cursor: pointer;
+  /* Cursor de “mãozinha”. */
+  z-index: 101;
+  /* P ficar acima do navbar. */
+}
+
+
+.hamburger span {
+  display: block;
+  /* “barrinhas” do hamburger. */
+  width: 28px;
+  /* Largura. */
+  height: 3px;
+  /* Altura. */
+  margin: 6px;
+  /* Espaçamento entre as barrinhas. */
+  border-radius: 3px;
+  /* Pontas arredondadas. */
+  transition: all 0.3s ease;
+  /* Tempo da mudaça p X. */
+}
+
+/* Mudança p X */
+.hamburger.toggle span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+  /* Rotaciona e desloca a primeira barrinha. */
+}
+
+.hamburger.toggle span:nth-child(2) {
+  opacity: 0;
+  /*  Oculta a barrinha do meio. */
+}
+
+.hamburger.toggle span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+  /* Rotaciona e desloca a terceira barrinha. */
+}
+
+/* menu escondido */
+.nav-menu {
+  position: absolute;
+  /* Coloca o menu abaixo do navbar. */
+  top: 100%;
+  /* Posicionado logo abaixo da navbar. */
+  left: 0;
+  /* Começa da esquerda. */
+  width: 100%;
+  /* Ocupa toda a largura. */
+  background: #1a1a1a;
+  /* Fundo . */
+  transform-origin: top;
+  /* Efeito de desdobrar. */
+  transform: scaleY(0);
+  /* Esconde o menu. */
+  transition: transform 0.3s ease-in-out;
+  /* Tempo de abrir e fechar. */
+}
+
+.nav-menu.open {
+  transform: scaleY(1);
+  /* Mostra o menu. */
+}
+
+.nav-menu ul {
+  list-style: none;
+  /* Remove marcadores. */
+  display: flex;
+  /* Empilha. */
+  flex-direction: column;
+  /* Colunas. */
+  padding: 1rem 0;
+  /* Espaçamento interno do <ul>. */
+}
+
+.nav-menu li {
+  text-align: center;
+  /* Centralizar . */
+  margin: 1rem 0;
+  /* Espaço. */
+}
+
+.nav-menu li a {
+  color: #fff;
+  /* Cor. */
+  text-decoration: none;
+  /* Remove sublinhado. */
+  font-size: 1.1rem;
+  /* Fonte. */
+}
+
+
+/* <main> */
+/* <section> sobre */
+.sobre {
+  text-align: center;
+  /* Centraliza a seção. */
+  padding: 6rem 1rem;
+  /* Espaçamento interno. */
+}
+
+/*img */
+.sobre-perfil img {
+  width: 200px;
+  /* Largura imagem de perfil. */
+  height: 200px;
+  /* Altura. */
+  border-radius: 50%;
+  /* Deixar redonda. */
+  transition: all 0.4s ease;
+  /* Tempo da animação ao passar o mouse. */
+}
+
+.sobre-perfil img:hover {
+  transform: scale(1.05);
+  /* aumenta a img ao passar o mouse. */
+}
+
+h1 {
+  font-size: 2.8rem;
+  /* Tamanho. */
+  margin: 2rem;
+  /* Espaço acima. */
+}
+
+h2 {
+  font-size: 2.3rem;
+  /* Tamanho. */
+  margin-bottom: 3rem;
+  /* Espaço abaixo. */
+  text-align: center;
+  /* Centraliza. */
+}
+
+.subtitulo {
+  font-size: 1.4rem;
+  /* Tamanho. */
+  font-weight: 600;
+  /* Seminegrito. */
+  margin-bottom: 2rem;
+  /* Espaço abaixo. */
+}
+
+.description {
+  max-width: 750px;
+  /* Largura máxima. */
+  margin: 0 auto 0;
+  /* Mantém a margens menores que o elemento pai. */
+  font-size: 1.15rem;
+  /* Tamanho. */
+  line-height: 1.8;
+  /* Espaçamento entre as linhas. */
+}
+
+
+/* <section> projetos */
+.card-container {
+  display: grid;
+  /* Cards em colunas. */
+  grid-template-columns:
+    repeat(auto-fit, minmax(340px, 1fr));
+  /* Coloca os cards de forma responsiva com tamanho minimo. */
+  gap: 3rem;
+  /* Espaço entre os cards. */
+  margin: 0 auto 0;
+  /* Centraliza o container. */
+  max-width: 1300px;
+  /* Largura máxima. */
+  padding: 0 2rem;
+  /* Não deixa os cards tocarem nas bordas da tela. */
+}
+
+.card {
+  position: relative;
+  /* P poder colocar os textos dentro. */
+  height: 300px;
+  /* Altura. */
+  border-radius: 16px;
+  /* Arredondados. */
+  overflow: hidden;
+  /* Esconde os textos. */
+  background-size: cover;
+  /* P não distorcer a imagem do card. */
+  cursor: pointer;
+  /* “mãozinha”. */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  /* Sombra. */
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  /* Tempo de animação ao passar o mouse. */
+}
+
+.card::before {
+  content: '';
+  /* Cria algo atras do card p poder colocar cor. */
+  position: absolute;
+  /* coloca ele em relação ao card. */
+  width: 100%;
+  height: 100%;
+  /* Cobre todo o card. */
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  /* Eleva o card, “flutua”. */
+}
+
+/* Texto dentro do card */
+.card-content {
+  position: absolute;
+  /* Fica posicionado dentro do card. */
+  width: 100%;
+  /* Ocupa todo o card. */
+  padding: 2.2rem;
+  /* Não deixa o texto tocar nas bordas. */
+  transform: translateY(100%);
+  /* Deixa o conteudo p baixo "invisivel". */
+  transition: transform 0.4s ease;
+  /* Tempo de animação para entrada suave. */
+  color: white;
+  /* Cor. */
+  box-sizing: border-box;
+  /* Manter o Texto bem centralizado. */
+  display: flex;
+  /* Alinhar o texto e o titulo. */
+  flex-direction: column;
+  /* Em coluna. */
+  justify-content: flex-end;
+  /* Mantem o conteudo na base do card. */
+  min-height: 100%;
+  /* Usei para garantir que o texto ficasse todo p baixo. */
+}
+
+.card:hover .card-content {
+  transform: translateY(0);
+  /* Mostra o texto ao passar o mouse. */
+}
+
+.card.open .card-content {
+  transform: translateY(0);
+  /* Mostra o texto ao passar ao clicar. */
+}
+
+.card-content .title {
+  font-size: 1.6rem;
+  /* Tamanho. */
+  font-weight: 700;
+  /* Negrito. */
+  margin-bottom: 1rem;
+  /* Espaço abaixo. */
+  word-wrap: break-word;
+  /* Quebra titulo grande. */
+}
+
+.card-content .desc {
+  width: 100%;
+  /* Largura da descrição. */
+  font-size: 1.05rem;
+  /*Tamanho. */
+  line-height: 1.7;
+  /* Espaçamento entre as linhas. */
+}
+
+/* Imagens de cada card */
+#spring {
+  background-image: url('https://blog.bomcontrole.com.br/wp-content/uploads/2020/05/contabilidade-digital.jpg');
+}
+
+#spring2 {
+  background-image: url('https://th.bing.com/th/id/OIP.VHSPtN-nS76ayneIfjkrngHaE8?rs=1&pid=ImgDetMain');
+}
+
+#php {
+  background-image: url('https://cdn.dribbble.com/users/110372/screenshots/14183609/media/c627ac2d400eab1a3355cb894fcd5a38.png');
+}
+
+#nextjs {
+  background-image: url('https://img.freepik.com/fotos-gratis/cifrao-em-preto_118019-528.jpg?size=626&ext=jpg');
+}
+
+#django {
+  background-image: url('https://media.istockphoto.com/id/514411672/photo/office-leather-desk-table-with-coffee-and-supplies.webp?b=1&s=612x612&w=0&k=20&c=ONzsgDkVCoeNGl3rlZfuiDJxrPoDIeLZAygEe2-Oaak=');
+}
+
+#react {
+  background-image: url('https://cdn.dribbble.com/users/2153376/screenshots/16858354/media/b9c07d34c025c0895d7057dcb6756ad2.jpg?resize=768x576&vertical=center');
+}
+
+
+.contato {
+  padding: 6rem 1rem;
+  /* Espaço da <section> no topo e na base */
+}
+
+.contato-card {
+  max-width: 650px;
+  /* Largura máxima. */
+  margin: 0 auto 0;
+  /* Centraliza. */
+  padding: 3.5rem;
+  /* Espaço interno da borda para os elementos. */
+  border-radius: 18px;
+  /* Arredondado. */
+  background: #000;
+  /* Fundo. */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  /* Sombra. */
+  position: relative;
+  /* Para poder posicionar elementos dentro dele. */
+}
+
+.formulario {
+  display: flex;
+  /* Empilhar os campos. */
+  flex-direction: column;
+  /* Posicionar um abaixo do outro. */
+  gap: 2rem;
+  /* Espaço entre eles. */
+}
+
+.form-group {
+  display: flex;
+  /* Para posicionar o input em relação ao label. */
+  flex-direction: column;
+  /* Por o label por cima do input. */
+}
+
+.form-group label {
+  margin-bottom: 0.9rem;
+  /* Espaço entre label e input(coloquei aqui e não um gap pq quero
+  que o label de baixo fique proximo do input de baixo e longe do de cima). */
+  font-weight: 600;
+  /* Seminegrito. */
+  font-size: 1.15rem;
+  /* Tamanho. */
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 1.1rem;
+  /* Espaço interno. */
+  border: 2px solid;
+  /* Borda. */
+  border-radius: 10px;
+  /* Cantos arredondados. */
+  font-size: 1.05rem;
+  /* Tamanho. */
+  transition: all 0.3s ease;
+  /* Tempo de animação ao clicar no campo. */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  /* Remove a borda ao clicar. */
+}
+
+.btn.enviar {
+  padding: 1.2rem;
+  /* Espaço interno. */
+  border: none;
+  /* Remove borda. */
+  border-radius: 10px;
+  /* Cantos arredondados. */
+  font-weight: 700;
+  /* Negrito. */
+  font-size: 1.15rem;
+  /* Tamanho. */
+  cursor: pointer;
+  /* mãozinha. */
+  transition: all 0.3s ease;
+  /* Tempo de animação ao passar o mouse. */
+  margin-top: 1.2rem;
+  /* Espaço acima do botão. */
+  text-transform: uppercase;
+  /* Deixa o texto em capslock. */
+  letter-spacing: 1.2px;
+  /* Espaço entre letras. */
+}
+
+.btn.enviar:hover {
+  transform: translateY(-4px);
+  /* Sobe o botão ao passar o mouse. */
+}
+
+.social {
+  display: flex;
+  /* Alinhas os icones. */
+  justify-content: center;
+  /* Centralizar. */
+  gap: 2.5rem;
+  /* Espaço entre eles. */
+  margin-top: 3.5rem;
+  /* Espaço acima deles. */
+}
+
+.social a {
+  font-size: 2.2rem;
+  /* Tamanho. */
+  transition: all 0.3s ease;
+  /* Tempode animação. */
+  display: flex;
+  /* Posicionar o icone no link. */
+  align-items: center;
+  /* Centralizar. */
+  justify-content: center;
+  /* Centralizar. */
+  width: 55px;
+  /* Largura. */
+  height: 55px;
+  /* Altura. */
+  border-radius: 50%;
+  /* Bordas arredondadas. */
+}
+
+.social a:hover {
+  transform: scale(1.15) translateY(-4px);
+  /* Efeito de aumentar e "elevar" ao passar o mouse. */
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background: white;
+
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6rem 2rem 2rem;
+    transition: right 0.3s ease;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li a {
+    width: 100%;
+    padding: 1rem 0;
+    color: black;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 101;
+  }
+
+  .sobre {
+    padding: 4rem 1rem;
+  }
+
+  .sobre-logo img {
+    width: 160px;
+    height: 160px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1.2rem;
+  }
+
+  .card {
+    height: 260px;
+  }
+
+  .contato-card {
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .sobre-logo img {
+    width: 140px;
+    height: 140px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .contato-card {
+    padding: 1.8rem;
+  }
+
+  .btn.enviar {
+    padding: 1rem;
+  }
+
+  .social a {
+    font-size: 1.8rem;
+    width: 45px;
+    height: 45px;
+  }
+}

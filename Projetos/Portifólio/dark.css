@@ -1,0 +1,98 @@
+body {
+    background: #121212;
+}
+
+.navbar {
+    border-bottom: 1px solid #002e02;
+}
+
+.btn-theme {
+    color: #fff;
+}
+
+.btn-theme:hover {
+    color: #4CAF50;
+}
+
+.nav-links li a {
+    color: #e0e0e0;
+}
+
+.nav-links li a::after {
+    background: #4CAF50;
+}
+
+.hamburger span {
+    background: #fff;
+}
+
+.sobre-perfil img {
+    border: 6px solid #4CAF50;
+    box-shadow: 0 0 25px rgba(76, 175, 80, 0.4);
+}
+
+.sobre-perfil img:hover {
+    box-shadow: 0 0 35px rgba(76, 175, 80, 0.6);
+}
+
+h1,
+h2 {
+    color: #fff;
+}
+
+.subtitulo {
+    color: #4CAF50;
+}
+
+.description {
+    color: #e0e0e0;
+}
+
+.card:hover {
+    box-shadow: 0 20px 40px rgba(76, 175, 80, 0.3);
+}
+
+.form-group label {
+    color: #fff;
+}
+
+.form-group input,
+.form-group textarea {
+    border-color: #333;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.3);
+}
+
+.contato-card {
+    border: 1px solid #3cb64c;
+}
+
+.btn.enviar {
+    background: linear-gradient(to right, #4CAF50, #2E7D32);
+    color: white;
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+.btn.enviar:hover {
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+}
+
+.social a {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social a:hover {
+    background: rgba(76, 175, 80, 0.4);
+    color: #4CAF50;
+}
+
+.nav-links.active {
+    background: #1a1a1a;
+}
